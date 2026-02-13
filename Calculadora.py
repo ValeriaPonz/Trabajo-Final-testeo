@@ -10,10 +10,15 @@ def restar(a, b):
 
 def multiplicar(a, b):
     return a * b
-
+#def test_multipicacion_basica(self)
+# self.assertEqual (multiplicar(2,3),6)
+# self.assertEqual (multiplicar (-2,-3),6)
 
 def dividir(a, b):
     return a / b
+#def tet_division_basica (self)
+# self.assertEqual (dividir(8,2),4)
+# self.assertEqual (dividir(-8, -2),4)
 
 
 def es_par(numero):

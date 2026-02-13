@@ -16,8 +16,19 @@ class sTestCalculadora(unittest.TestCase):
         self.assertEqual(restar(15, -10), 25)
     
     def test_restar_negativos(self):
+        self.assertEqual(sumar(-5, 2), -3)
+        self.assertEqual(sumar(-15, 10), -5)
+
         self.assertEqual(restar(-5, 2), -7)
         self.assertEqual(restar(-15, 10), -25)
+
+    def test_multipicacion_basica(self):
+        self.assertEqual (multiplicar(2,3),6)
+        self.assertEqual (multiplicar (-2,-3),6)
+
+    def tet_division_basica (self):
+        self.assertEqual (dividir(8,2),4)
+        self.assertEqual (dividir(-8, -2),4)
 
     def test_es_par_positivos(self):
         self.assertTrue(es_par(2))
