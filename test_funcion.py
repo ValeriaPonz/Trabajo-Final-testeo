@@ -1,6 +1,6 @@
 # Funciones
 import unittest
-from Calculadora import sumar, restar, es_par, es_mayor_edad
+from Calculadora import sumar, restar, multiplicar, dividir, es_par, es_mayor_edad
 
 class sTestCalculadora(unittest.TestCase):
     def test_sumar_positivos(self):
