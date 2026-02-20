@@ -1,7 +1,7 @@
 import random
 import unittest
 
-from Calculadora import sumar, restar, multiplicar, dividir
+from Calculadora import sumar, restar, multiplicar, dividir, es_par, es_mayor_edad
 class TestTryExcept(unittest.TestCase):
 
     def sumar(a, b):
