@@ -1,6 +1,7 @@
 # Carolina, Livia y Valeria
 # (Protegido con control de excepciones)
-
+import unittest
+from Calculadora import sumar, restar, multiplicar, dividir, es_par, es_mayor_edad
 def sumar(a, b):
     try:
         return a + b
@@ -69,5 +70,5 @@ def calcular_media(lista):
     except ZeroDivisionError:
         return "Error: La lista está vacía, no se puede calcular la media"
     
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
