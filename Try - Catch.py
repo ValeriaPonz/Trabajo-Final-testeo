@@ -1,37 +1,62 @@
 def sumar(a, b):
-    return a + b
+    try:
+        return a + b
+    except TypeError:
+        return "Error: suma"
 
 
 def restar(a, b):
-    return a - b
+    try:
+        return a - b
+    except TypeError:
+        return "Error: resta"
 
 
 def multiplicar(a, b):
-    return a * b
+    try:
+        return a * b
+    except TypeError:
+        return "Error: multiplicación"
 
 
 def dividir(a, b):
-    return a / b
+    try:
+        return a / b
+    except TypeError:
+        return "Error: división"
+    except ZeroDivisionError:  
+        return "Error: división por cero"
 
 
 def es_par(numero):
-    return numero % 2 == 0
+    try:
+        return numero % 2 == 0
+    except TypeError:
+        return "Error: paridad"
 
 
 def es_mayor_edad(edad):
-    return edad >= 18
+    try:
+        return edad >= 18
+    except TypeError:
+        return "Error: edad"
 
 
 def saludar(nombre):
-    return "Hola, " + nombre
-
+    try:
+        return "Hola, " + nombre
+    except TypeError:
+        return "Error: saludo"
+    
 
 def tipo_numero(numero):
-    if numero > 0:
-        return "positivo"
-    if numero < 0:
-        return "negativo"
-    return "cero"
+    try:
+        if numero > 0:
+            return "positivo"
+        if numero < 0:
+            return "negativo"
+    except TypeError:
+        return "Error: cero"
 
 
 def es_palindromo(texto):
