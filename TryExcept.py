@@ -1,37 +1,45 @@
-def sumar(a, b):
-    try:
-        return a + b
-    except TypeError:
-        return "Error: Ingresa solo números"
+import random
+import unittest
 
-def restar(a, b):
-    try:
-        return a - b
-    except TypeError:
-        return "Error: Ingresa solo números"
+from Calculadora import sumar, restar, multiplicar, dividir
+class TestTryExcept(unittest.TestCase):
 
-def multiplicar(a, b):
-    try:
-        return a * b
-    except TypeError:
-        return "Error: Ingresa solo números"
+    def sumar(a, b):
+        try:
+            return a + b
+        except TypeError:
+            return "Error: Ingresa solo números"
 
-def dividir(a, b):
-    try:
-        return a / b
-    except ZeroDivisionError:
-        return "Error: No se puede dividir entre cero"
-    except TypeError:
-        return "Error: Ingresa solo números"
+    def restar(a, b):
+        try:
+            return a - b
+        except TypeError:
+            return "Error: Ingresa solo números"
 
-def es_par(numero):
-    try:
-        return numero % 2 == 0
-    except TypeError:
-        return False
+    def multiplicar(a, b):
+        try:
+            return a * b
+        except TypeError:
+            return "Error: Ingresa solo números"
 
-def es_mayor_edad(edad):
-    try:
-        return edad >= 18
-    except TypeError:
-        return False
+    def dividir(a, b):
+        try:
+            return a / b
+        except ZeroDivisionError:
+            return "Error: No se puede dividir entre cero"
+        except TypeError:
+            return "Error: Ingresa solo números"
+
+    def es_par(numero):
+        try:
+            return numero % 2 == 0
+        except TypeError:
+            return False
+
+    def es_mayor_edad(edad):
+        try:
+            return edad >= 18
+        except TypeError:
+            return False
+if __name__ == '__main__':
+    unittest.main()

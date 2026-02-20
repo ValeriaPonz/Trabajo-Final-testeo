@@ -2,7 +2,7 @@ import random
 import unittest
 
 from Calculadora import sumar, restar, multiplicar, dividir
-from Funciones import es_par, es_mayor_edad, saludar, tipo_numero, es_palindromo, calcular_media
+
 
 class TestFuncionesMasivas(unittest.TestCase):
 
