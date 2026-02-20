@@ -57,10 +57,8 @@ def tipo_numero(numero):
 
 def es_palindromo(texto):
     try:
-        # Intenta comprobar si el texto es igual a sí mismo leído al revés
         return texto == texto[::-1]
     except TypeError:
-        # Si se le pasa un número o un dato que no se puede "voltear", devuelve False
         return False
 
 def calcular_media(lista):
@@ -69,5 +67,4 @@ def calcular_media(lista):
     except TypeError:
         return "Error: Ingresa una lista que contenga solo números"
     except ZeroDivisionError:
-        # Si la lista está vacía [], len(lista) es 0 y da error al dividir
         return "Error: La lista está vacía, no se puede calcular la media"
