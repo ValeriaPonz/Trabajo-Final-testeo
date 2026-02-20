@@ -1,5 +1,6 @@
 import random
-from Calculadora import *
+from Calculadora import sumar, restar, multiplicar, dividir
+from Funciones import es_par, es_mayor_edad, saludar, tipo_numero, es_palindromo, calcular_media
 
 def test_sumar_masivo():
     for _ in range(10000):
