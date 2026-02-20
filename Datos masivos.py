@@ -1,5 +1,5 @@
 import random
-from calculadora import *
+from Calculadora import *
 
 def test_sumar_masivo():
     for _ in range(10000):
