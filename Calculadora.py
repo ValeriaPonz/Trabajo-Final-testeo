@@ -1,12 +1,17 @@
 # Carolina, Livia y Valeria
 
 def sumar(a, b):
-    return a + b
+    try:
+        return a + b
+    except TypeError:
+        return "Error: ambos argumentos deben ser números"
 
 
 def restar(a, b):
-    return a - b
-
+    try:
+        return a - b
+    except TypeError:
+        return "Error: ambos argumentos deben ser números"
 
 def multiplicar(a, b):
     return a * b
