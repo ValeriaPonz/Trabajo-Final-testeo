@@ -68,3 +68,6 @@ def calcular_media(lista):
         return "Error: Ingresa una lista que contenga solo números"
     except ZeroDivisionError:
         return "Error: La lista está vacía, no se puede calcular la media"
+    
+    if __name__ == '__main__':
+        unittest.main()
