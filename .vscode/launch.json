@@ -1,0 +1,12 @@
+{
+   
+    "configurations": [
+        {
+            "name": "Depurador de Python: Archivo actual",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
